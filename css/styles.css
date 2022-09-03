@@ -111,7 +111,7 @@ span {
 }
 
 .menu-link:hover,
-.menu-link:focus
+.menu-link:focus,
 .menu-link.current {
     color: var(--secondary-text-color);
 }
@@ -147,8 +147,8 @@ span {
     margin-right: 50px;
 }
 
-.contact-link:hover .icon-envelope,
-.contact-link:focus .icon-envelope {
+.contact-link:hover, 
+.contact-link:focus {
     color: var(--secondary-text-color);
 }
 
@@ -295,12 +295,12 @@ span {
 
 .team-list {
     background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px 0px rgba(93.33, 93.33, 93.33, 0.25);
 }
 
 .subtitle {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     color: var(--primary-text-color-theme);
     font-weight: 400;
     font-size: 16px;
@@ -414,6 +414,11 @@ button:active {
     color: white;
 }
 
+button:hover {
+    box-shadow: 0px 4px 4px 0px rgba(93.33, 93.33, 93.33, 0.25);
+}
+
+
 .menu-margin {
     margin-bottom: 50px;
 }
@@ -470,6 +475,168 @@ button:active {
 
 /* Иконки */
 
-.contact-link {
-    display: block;  
+.contact-link-header {
+    display: flex;
+    align-items: center;  
+}
+
+.icon-envelope {
+    margin-right: 10px;
+}
+
+.icon-header-focus:focus,
+.icon-header-focus:hover {
+    color:var(--secondary-text-color);
+}
+
+.icon-smartphone {
+    margin-right: 10px;
+}
+
+.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut-1 {
+    background-color: #F5F4FA;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.social-list-link:hover, 
+.social-list-link:focus {
+    background-color: var(--secondary-text-color);
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #FFFFFF;
+}
+
+.social-list-portfolio {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-link-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(100, 100, 100, 0.1);
+}
+
+.social-list-link-portfolio:hover,
+.social-list-link-portfolio:focus {
+    background-color: var(--secondary-text-color);
+}
+
+.social-list-icon-portfolio {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.social-list-link-portfolio:hover .social-list-icon-portfolio,
+.social-list-link-portfolio:focus .social-list-icon-portfolio {
+    fill: #FFFFFF;
+}
+
+.subtitle-come-back {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;  
+}
+
+.footer-icon {
+    display: flex;
+    width: 206px;
+    height: 80px;  
+}
+
+/* Постіні клієнти */
+
+.clients-link {
+    width: 1200px;
+    height: 184px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle-clients {
+    font-family: var(--primary-font);
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.button-clients-post {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.button-clients-post:last-child {
+    margin-right: 0px;
+}
+
+.button-clients {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.button-clients:hover, .button-clients:focus {
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Иконки портфоліо*/
+
+.images-hover:hover {
+    box-shadow: 0px 4px 4px 0px rgba(93.33, 93.33, 93.33, 0.25);
 }
