@@ -137,6 +137,7 @@ span {
 .mail,
 .contact-phone-number {
     color: var(--primary-text-color-theme);
+    fill: currentColor;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 14px;
@@ -208,7 +209,7 @@ span {
 .section-busines {
     width: 1600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgb(47, 48, 58, 0.5), rgb(196, 196, 196, 0.5)), url('/images/general-img.jpg');
+    background-image: linear-gradient(rgb(47, 48, 58, 0.5), rgb(196, 196, 196, 0.5)), url('../images/general-img.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-origin: padding-box;
@@ -354,6 +355,29 @@ footer {
     color: var(--secondary-text-color);
 }
 
+.footer-container-div-one {
+    width: 231px;
+    margin-right: 70px;
+
+}
+
+.footer-container {
+    display: flex; 
+}
+
+.join {
+    margin-bottom: 20px;
+    margin-top: 16px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 
 /* potrfolio */
 
@@ -484,10 +508,6 @@ button:hover {
     margin-right: 10px;
 }
 
-.icon-header-focus:focus,
-.icon-header-focus:hover {
-    color:var(--secondary-text-color);
-}
 
 .icon-smartphone {
     margin-right: 10px;
@@ -511,6 +531,7 @@ button:hover {
     justify-content: center;
     column-gap: 10px;
     padding-bottom: 30px;
+    
 }
 
 .social-list-link {
@@ -581,9 +602,7 @@ button:hover {
 }
 
 .footer-icon {
-    display: flex;
     width: 206px;
-    height: 80px;  
 }
 
 /* Постіні клієнти */
