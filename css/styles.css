@@ -60,7 +60,7 @@ section {
     padding-bottom: 94px;
 }
 
-.section-pudding {
+.section-doing {
     padding-top: 0px;
 }
 
@@ -209,12 +209,12 @@ span {
 .section-busines {
     width: 1600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgb(47, 48, 58, 0.5), rgb(196, 196, 196, 0.5)), url('../images/general-img.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(196, 196, 196, 0.5)), url('../images/general-img.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-origin: padding-box;
     background-clip: padding-box;
-    background-color: #C4C4C4;
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 .menu-preferens {
@@ -363,11 +363,11 @@ footer {
 
 .footer-container {
     display: flex; 
+    align-items: baseline;
 }
 
 .join {
     margin-bottom: 20px;
-    margin-top: 16px;
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
@@ -513,25 +513,32 @@ button:hover {
     margin-right: 10px;
 }
 
-.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut-1 {
+.icon-preferens {
     display: flex;
-    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
     margin-bottom: 30px;
+    border-radius: 4px;
+    
 }
 
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut-1 {
-    background-color: #F5F4FA;
+.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+
 
 .social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
     padding-bottom: 30px;
-    
 }
 
 .social-list-link {
@@ -542,6 +549,7 @@ button:hover {
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF;
+    
 }
 
 .social-list-link:hover, 
@@ -585,6 +593,7 @@ button:hover {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
+    fill-opacity: 0.1;
 }
 
 .social-list-link-portfolio:hover .social-list-icon-portfolio,
@@ -607,7 +616,7 @@ button:hover {
 
 /* Постіні клієнти */
 
-.clients-link {
+container {
     width: 1200px;
     height: 184px;
     padding-left: 15px;
@@ -649,10 +658,19 @@ button:hover {
     border-radius: 4px;
 }
 
-.button-clients:hover, .button-clients:focus {
-    background-color: #FFFFFF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.clients-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.button-clients:hover {
+    border: var(--secondary-text-color);
+}
+
+
 
 /* Иконки портфоліо*/
 
